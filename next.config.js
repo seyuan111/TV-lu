@@ -3,6 +3,6 @@ const nextConfig = {}
 
 module.exports = {
     images: {
-        domains: ["static.vecteezy.com"]
+        domains: ["static.vecteezy.com", 'https://www.themoviedb.org/']
     }
 }

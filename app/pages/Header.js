@@ -19,6 +19,7 @@ const Header = () => {
             src="https://static.vecteezy.com/system/resources/previews/007/688/855/original/tv-logo-free-vector.jpg"
             width={70}
             height={70}
+            alt='/'
         />
     </div>
   )
