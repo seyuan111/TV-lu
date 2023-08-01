@@ -9,15 +9,15 @@ export default function Home({results}) {
     <div>
       <Header />
       <Nav />
- {/*      <Results results={results}/> */}
+      <Results results={results}/>
     </div>
   )
 }
 
-export async function getServerSideProps(content) {
+export async function getServerSideProps(context) {
   const genre = context.query.genre;
 
-  const request = await fetch(`https:api.themoviedb.org/3${requests[genre].url || requests.fetchTrending.url}`
+  const request = await fetch(`https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}`
   ).then(res.json())
 
   return{
